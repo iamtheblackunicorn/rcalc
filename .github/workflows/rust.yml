@@ -1,0 +1,35 @@
+on: [push]
+name: CI
+jobs:
+  build_and_test:
+    name: rls
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions-rs/toolchain@v1
+        with:
+          toolchain: stable
+      - uses: actions-rs/cargo@v1
+        with:
+          command: build
+          args: --release
+      # Addition
+      - uses: actions-rs/cargo@v1
+        with:
+          command: run
+          args: 4 5 +
+      # Subtraction
+      - uses: actions-rs/cargo@v1
+        with:
+          command: run
+          args: 4 5 -
+      # Multiplication
+      - uses: actions-rs/cargo@v1
+        with:
+          command: run
+          args: 4 5 x
+      # Division
+      - uses: actions-rs/cargo@v1
+        with:
+          command: run
+          args: 4 5 /
