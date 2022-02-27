@@ -20,7 +20,7 @@ To compile `rcalc`, follow these steps:
 
 - 1.) Get the source code:
 ```bash
-$ git clone https://$YOUR_GITHUB_TOKEN@github.com/iamtheblackunicorn/rcalc.git
+$ git clone https://github.com/iamtheblackunicorn/rcalc.git
 ```
 - 2.) Change directory:
 ```bash
@@ -33,7 +33,7 @@ $ make build
 
 ## Installation :inbox_tray:
 
-Move the executable on the path `rcalc/target/release/rls` to the directory where you keep your binary executables. If you are on Linux or Mac OSX, you might have to change permissions like this: `chmod a+x rcalc`.
+Move the executable on the path `rcalc/target/release/rcalc` to the directory where you keep your binary executables. If you are on Linux or Mac OSX, you might have to change permissions like this: `chmod a+x rcalc`.
 
 ## Usage :book:
 
